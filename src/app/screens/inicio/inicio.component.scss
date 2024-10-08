@@ -1,0 +1,109 @@
+.container-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .box{
+        padding: 20px;
+        width: 50%;
+        position: relative;
+    }
+    .box-two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.question{
+    color: var(--primaryColor);
+    font-size:60px;
+    font-weight: bold;
+}
+.box .title{
+    position: absolute;
+    top: 50%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20);
+    
+        color: var(--secondaryColor);
+    font-size:60px;
+    font-weight: bold;
+
+}
+.input-group{
+    width: 90%;
+}
+.cards{
+    margin-top: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    border:  1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px gray;
+
+    .card-info{
+        width: 30%;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    h3{
+        color: var(--primaryColor);
+    }
+
+  
+ 
+}
+
+.progress-bar{
+    width: 90%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: rgb(149, 224, 247);
+    margin: 20px auto;
+    
+    .progress{
+        width: 30%;
+        background-color: var(--primaryColor);
+    }
+}
+@media (max-width: 850px) {
+    .container-info{
+        .box{
+            width: 100%;
+        }
+    }
+
+    .question{
+        font-size: 1.2rem
+    }
+
+    // .container-info{
+    //     width: 76%;
+    // }
+    .cards{
+        .card-info{
+            width: 100%;
+        }
+    }
+    .box-two{
+        img{
+            width: 70%;
+        }
+    }
+    .info{
+        width: 100%;
+    }
+
+    .box .title{
+        top: 30%;
+        font-size:1.7rem;
+    }
+}

@@ -1,0 +1,18 @@
+<nav class="nav-container">
+ 
+    @if (text != '') {
+        <div class="miga">
+            <mat-icon>home</mat-icon> /  EMPRESAS  /  <p class="company">{{text | uppercase}}</p>
+        </div>
+    }
+    @else {
+        <img [src]="logo" alt="">
+    }
+    
+    <div class="user">
+        <mat-icon class="icon-account">account_circle</mat-icon>
+        <p>David Perez</p>
+        <mat-icon class="arrow">keyboard_arrow_down</mat-icon>
+    </div>
+    
+</nav>

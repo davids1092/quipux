@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primaryColor: #63a7f5;
+    --secondaryColor: #1e2547;
+    --btnColor: #abf74e;
+    --hoverColor: #d0cbf2;
+  }
+  html,
+  body {
+    height: 100%;
+    font-family: "poppins" !important;
+  }
+  body {
+    margin: 0;
+    font-family: "poppins" !important;
+  }
+  
+  @font-face {
+    font-family: poppins;
+    src: url(../src/assets/fonts/Poppins-Light.ttf);
+  }
+  @font-face {
+    font-family: poppins-bold;
+    src: url(../src/assets/fonts/Poppins-Bold.ttf);
+  }
+
+mat-icon{
+  cursor: pointer;
+}

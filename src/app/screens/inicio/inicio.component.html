@@ -1,0 +1,33 @@
+<div class="container-info">
+    <div class="box">
+        <h2 class="question">¿Que quieres buscar?</h2>
+        <p>Encuentra la información que desees consultar ...</p>
+        <div class="input-group">
+            <input placeholder="Que servicio quieres consultar" class="form-control" />
+            <button id="search-button" type="button" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="cards">
+            @for (item of cards; track $index) {
+                <app-card class="card-info" [item]="item" ></app-card>
+            }
+          
+        </div>
+    </div>
+    <div class="box box-two">
+        <img [src]="banner" alt="" />
+        <h2 class="title">SERVICIOS QUIPUX</h2>
+
+        <div class="cards info">
+            <h3>Trámites en tu mano</h3>
+            <p>Ahora podrás hacer todos tus trámites desde la comodidad de tu
+                casa, desde cualquier dispositivo computadora, tablet o móvil.</p>
+
+                <div class="progress-bar">
+                    <div class="progress" ></div>
+                </div>
+        </div>
+    </div>
+</div>

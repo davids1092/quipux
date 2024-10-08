@@ -1,0 +1,52 @@
+
+<div class="container-fluid " >
+
+    <div class="row flex-nowrap">
+    
+      <div class="col-auto side-bar" [ngClass]="{'open':isvisible, 'close':isvisible, }">
+       
+        <div class="d-flex flex-column align-items-center align-items-sm-start pt-2 text-white min-vh-100">
+        
+          <div class="btn-menu">
+            <mat-icon color="red" (click)="goHome()"  >menu</mat-icon>
+            <h3  *ngIf="!isSmallScreen">QUIPUX</h3>
+          </div>
+          @if (isSmallScreen) {
+            <div class="container-icons" *ngFor="let item of menuItems" >
+              <mat-icon (click)="resize()" style="color: white;">{{item.icon}}</mat-icon>
+  
+            </div>
+          }
+       <!-- <div class="divider"></div> -->
+          <mat-accordion class="accordion" *ngIf="!isSmallScreen" >
+           
+            <mat-expansion-panel [expanded]="item.active" (click)="select(item)" *ngFor="let item of menuItems" [ngClass]="{'select':item.active ,'not-select':!item.active}">
+              <mat-expansion-panel-header>
+                <mat-panel-title [ngClass]="{'selected':item.active}"> <mat-icon>{{item.icon}}</mat-icon> {{item.name}} </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="item" *ngFor="let i of item.subMenus" >
+                <p (click)="goRote(i,item)">----- {{i.name}}</p>
+              </div>
+             
+            </mat-expansion-panel>
+          </mat-accordion>
+          
+          
+          <hr>
+        </div>
+      </div>
+      <div class="col py-3">
+      <div class="toolbar">
+        @if (isSmallScreen && isvisible) {
+          <mat-icon (click)="isvisible = !isvisible" >menu</mat-icon>
+        }
+       
+        <app-nav-bar></app-nav-bar>
+      </div>
+       
+   
+        <router-outlet></router-outlet>  
+      </div>
+    </div>
+  </div>
+  

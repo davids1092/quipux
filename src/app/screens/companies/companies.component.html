@@ -1,0 +1,46 @@
+
+<div class="container">
+  <div class="info">
+    <p class="title">INFORMACIÓN DE LA EMPRESA</p>
+    <p class="title">Nombre:</p>
+    <P>{{ company.empresa.nombre }}</P>
+    Fecha de creación:
+    <P>{{ company.empresa.fecha_creacion }}</P>
+    <p class="title">Dirección:</p>
+    <P>{{ company.empresa.direccion.calle }}</P>
+    <P>{{ company.empresa.direccion.edificio }}</P>
+    <P>{{ company.empresa.direccion.ciudad }}</P>
+    <P>{{ company.empresa.direccion.pais }}</P>
+    <p class="title">Números de telefono:</p>
+    <P> Fijo:{{ company.empresa.telefonos.fijo }}</P>
+    <P> Fax:{{ company.empresa.telefonos.fax }}</P>
+    <p class="title">sitio web:</p>
+    <P>{{ company.empresa.sitio_web }}</P>
+  </div>
+  <div class="info">
+    <p class="title">INFORMACIÓN DE CONTACTO</p>
+
+    <p class="title">Dirección:</p>
+    <P>{{ company.contacto.direccion }}</P> 
+    <p class="title">Correo electrónico:</p>
+    <P>{{ company.contacto.correo_electronico }}</P>
+ 
+    <p class="title">Sitio web:</p>
+    <P>{{ company.contacto.sitio_web }}</P>
+    <p class="title">Red social:</p>
+    <P> {{ company.contacto.redes_sociales.instagram }}</P>
+    <P> {{ company.contacto.redes_sociales.linkedin }}</P>
+  </div>
+  <div class="info">
+
+    <p class="title">Dirección correspondencia de correo:</p>
+    <P>{{ company.contacto.direccion_correspondencia }}</P> 
+    <p class="title">Número de telefonos:</p>
+    <P>{{ company.contacto.telefonos.fijo }}</P>
+    <P>{{ company.contacto.telefonos.celular }}</P>
+  </div>
+</div>
+<div class="logo">
+    <img  [src]="logo" alt="">
+</div>
+

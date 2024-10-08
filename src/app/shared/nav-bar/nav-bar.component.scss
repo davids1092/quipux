@@ -1,0 +1,39 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+
+    .icon-account{
+        width: 60px;
+        height: 60px;
+        font-size: 60px;
+    }
+
+    .user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            margin: 0;
+        }
+    }
+}
+
+.company{
+    font-weight: bold;
+    margin: 0;
+    color: var(--primaryColor);
+    border-bottom: 3px solid var(--primaryColor);
+}
+.miga{
+    display: flex;
+    align-items: center;
+    
+}
+
+.arrow{
+    cursor: pointer;
+}

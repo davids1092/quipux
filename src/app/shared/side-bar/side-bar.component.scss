@@ -1,0 +1,88 @@
+.open{
+    display: block;
+}
+.close{
+    display: none;
+}
+.side-bar{
+    background-color: var(--secondaryColor);
+}
+.toolbar{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    app-nav-bar{
+        width: 100%;
+    }
+}
+ul{
+   
+    width: 100%;
+    padding: 0;
+}
+li{
+    margin: 10px auto;
+    width: 100%;
+
+    list-style-type: none;
+
+    cursor: pointer;
+}
+.btn-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.select{
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.not-select{
+    background-color: transparent;
+}
+.mat-expansion-panel{
+    color: white;
+    font-family: 'poppins' ;
+    p{
+        font-family: 'poppins' ;
+    }
+}
+.mat-expansion-panel-header-title{
+    font-family: 'poppins';
+    color: white;
+}
+.divider{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.accordion{
+    margin-top: 30px;
+    width: 250px;
+}
+mat-expansion-panel{
+    margin-top: 20px;
+    box-shadow: none !important;
+}
+mat-panel-title{
+    mat-icon{
+        margin-right: 5px;
+    }
+}
+.container-icons{
+    margin-top: 30px;
+}
+.item{
+    margin: 10px auto;
+    p{
+        margin: 0;
+        cursor: pointer;
+    }
+}
+.selected{
+    color: var(--btnColor);
+    font-weight: bold; 
+}

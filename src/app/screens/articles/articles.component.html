@@ -1,0 +1,31 @@
+
+<div class="container">
+  <div class="info">
+    <p class="title">INFORMACIÓN DE CONTACTO</p>
+
+    <p class="title">Dirección:</p>
+    <P>{{ company.direccion }}</P> 
+    <p class="title">Correo electrónico:</p>
+    <P>{{ company.correo_electronico }}</P>
+ 
+    <p class="title">Sitio web:</p>
+    <P>{{ company.sitio_web }}</P>
+    <p class="title">Red social:</p>
+    <P> {{ company.redes_sociales.instagram }}</P>
+    <P> {{ company.redes_sociales.linkedin }}</P>
+  </div>
+  <div class="caroucel">
+ 
+    <app-carroucel></app-carroucel>
+
+    <div class="articles">
+      @for (item of article; track $index) {
+        <app-article class="article" [item]="item"></app-article>
+      }
+    
+    </div>
+  </div>
+</div>
+<div class="logo">
+  <img  [src]="logo" alt="">
+</div>
